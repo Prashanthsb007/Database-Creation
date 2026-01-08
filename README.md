@@ -123,9 +123,9 @@ Wait 30–60 seconds.
 
 ### 🔹 STEP 11 — Login to EC2
 
-```bash
+```
 ssh -i test.pem ubuntu@<EC2_PUBLIC_IP>
-
+```
 ## 🧩 PART 3 — CONNECT FROM EC2 & SET UP DATABASE
 
 ### 🔹 STEP 12 — Install MySQL Client (If Needed)
