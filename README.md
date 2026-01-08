@@ -159,4 +159,53 @@ Enter password:
 ```
 test1234
 ```
+Successful connection shows:
+```
+mysql>
+```
+🧩 PART 4 — CREATE DATABASE & TABLES
+🔹 STEP 15 — Create Database
+```
+CREATE DATABASE ebdb;
+SHOW DATABASES;
+```
+🔹 STEP 16 — Use Database
+```
+USE ebdb;
+```
+🔹 STEP 17 — Create Table
+```
+CREATE TABLE IF NOT EXISTS books (
+  book_id INT auto_increment,
+  title VARCHAR(250) NOT NULL,
+  author VARCHAR(50),
+  price FLOAT,
+  qty INT,
+  PRIMARY KEY (book_id)
+) ENGINE=InnoDB;
 
+```
+
+Verify table creation:
+```
+SHOW TABLES;
+```
+🔹 STEP 18 — Insert Sample Data
+```
+INSERT INTO books VALUES (1100, 'Chamber of Secrets', 'Rowling', 11.11, 4);
+INSERT INTO books VALUES (1103, 'Philosophers Stone', 'Rowling', 10.90, 8);
+INSERT INTO books VALUES (1105, 'War and Peace', 'Tolstoy', 22.22, 2);
+INSERT INTO books VALUES (1107, 'Romeo and Juliet', 'Shakespear', 33.33, 5);
+INSERT INTO books VALUES (1109, 'Othallo', 'Shakespear', 13.99, 7);
+INSERT INTO books VALUES (1111, 'Death on the Nile', 'Agatha', 44.40, 15);
+INSERT INTO books VALUES (1113, 'ABC Murders', 'Agatha', 39.40, 11);
+INSERT INTO books VALUES (1115, 'Anna Kareneena', 'Tolstoy', 55.55, 23);
+```
+🔹 STEP 19 — Verify Data
+```
+SELECT * FROM books;
+```
+🔹 STEP 20 — Exit MySQL
+```
+exit;
+```
