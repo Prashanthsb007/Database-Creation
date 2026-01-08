@@ -126,4 +126,35 @@ Wait 30–60 seconds.
 ```bash
 ssh -i test.pem ubuntu@<EC2_PUBLIC_IP>
 
+## 🧩 PART 3 — CONNECT FROM EC2 & SET UP DATABASE
+
+### 🔹 STEP 12 — Install MySQL Client (If Needed)
+
+On the EC2 instance (Ubuntu):
+
+## 🧩 PART 3 — CONNECT FROM EC2 & SET UP DATABASE
+
+### 🔹 STEP 12 — Install MySQL Client (If Needed)
+
+On the EC2 instance (Ubuntu):
+
+```bash
+sudo apt update -y
+sudo apt install mysql-client-core-8.0 -y
+🔹 STEP 13 — Get RDS Endpoint
+
+Go to AWS Console → RDS → Databases
+Click demo-book-seller
+Copy the Writer endpoint
+example:
+```bash
+demo-book-seller.cluster-xxxx.us-east-1.rds.amazonaws.com
+
+🔹 STEP 14 — Connect to Database
+Run the following command from EC2:
+```bash
+mysql -h demo-book-seller.cluster-xxxx.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+```bash
+test1234
 
