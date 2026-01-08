@@ -138,25 +138,25 @@ On the EC2 instance (Ubuntu):
 
 On the EC2 instance (Ubuntu):
 
----
+```
 sudo apt update -y
 sudo apt install mysql-client-core-8.0 -y
----
+```
 🔹 STEP 13 — Get RDS Endpoint
 Go to AWS Console → RDS → Databases
 Click demo-book-seller
 Copy the Writer endpoint
 example:
----
+```
 demo-book-seller.cluster-xxxx.us-east-1.rds.amazonaws.com
----
+```
 🔹 STEP 14 — Connect to Database
 Run the following command from EC2:
----
+```
 mysql -h demo-book-seller.cluster-xxxx.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
----
+```
 Enter password:
----
+```
 test1234
----
+```
 
