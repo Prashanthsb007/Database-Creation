@@ -222,3 +222,49 @@ In this section, we configure **Elastic Beanstalk environment variables** so tha
 3. Click **Applications**
 4. Select your application  
    Example: book-seller-demo
+
+5. Click **Environments**
+6. Click your environment  
+Example: Book-seller-demo-env
+
+---
+
+### 🔹 STEP 22 — Open Configuration
+
+1. Inside the environment page, click **Configuration**
+2. Locate the **Software** configuration section
+3. Click **Edit**
+
+---
+
+### 🔹 STEP 23 — Add Environment Properties
+
+Scroll down to **Environment properties**
+
+Add the following **Key / Value** pairs.
+
+⚠️ **Source must be set to `Plain text` for all entries**
+
+| Source | Key | Value |
+|------|-----|------|
+| Plain text | RDS_USERNAME | admin |
+| Plain text | RDS_PASSWORD | test1234 |
+| Plain text | RDS_DB_NAME | ebdb |
+| Plain text | RDS_PORT | 3306 |
+| Plain text | RDS_HOSTNAME | demo-book-seller.cluster-xxxx.us-east-1.rds.amazonaws.com |
+
+📌 Notes:
+- Use the **Writer endpoint** only
+- Variable names are **case-sensitive**
+- Do **not** add quotes
+
+---
+
+### 🔹 STEP 24 — Apply Configuration Changes
+
+1. Click **Apply**
+2. Elastic Beanstalk will start updating the environment
+3. Wait **1–3 minutes**
+
+Environment status will change:
+
