@@ -209,3 +209,16 @@ SELECT * FROM books;
 ```
 exit;
 ```
+## 🧩 PART 5 — CONNECT ELASTIC BEANSTALK TO RDS
+
+In this section, we configure **Elastic Beanstalk environment variables** so that the application can connect to the Aurora MySQL database.
+
+---
+
+### 🔹 STEP 21 — Open Elastic Beanstalk Environment
+
+1. Go to **AWS Console**
+2. Search for **Elastic Beanstalk**
+3. Click **Applications**
+4. Select your application  
+   Example: book-seller-demo
