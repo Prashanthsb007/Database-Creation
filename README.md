@@ -140,7 +140,7 @@ On the EC2 instance (Ubuntu):
 
 ```
 sudo apt update -y
-sudo apt install mysql-client-core-8.0 -y
+sudo apt install mysql-client -y
 ```
 🔹 STEP 13 — Get RDS Endpoint
 Go to AWS Console → RDS → Databases
